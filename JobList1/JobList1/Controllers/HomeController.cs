@@ -11,7 +11,7 @@ namespace JobList.Controllers
     {
         public IActionResult Index()
         {
-            string jsonFilePath = "C:\\Users\\Ogbebor.S\\Desktop\\C# FOLDER\\JobList1\\JobList1\\wwwroot\\jobs.json";
+            string jsonFilePath = "jobs.json"; //path removed//
             string jsonContent = System.IO.File.ReadAllText(jsonFilePath);
             var jobs = JsonSerializer.Deserialize<List<Jobs>>(jsonContent);
 
